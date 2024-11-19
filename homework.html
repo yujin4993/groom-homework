@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            border:3px solid black;
+        }
+        .header{
+            width:100%;
+        }
+        .header img{
+            width: 100%;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,100px);
+            gap: 20px;
+        }
+        .grid-item img{
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .grid-item img:hover{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://ohbrown.co.kr/wp-content/uploads/2023/08/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4%EA%B4%91%EA%B3%A0-2.jpg">
+        NETFLIX ORIGINALS
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+            <div class="grid-item"><img src="https://www.100news.kr/imgdata/100news_kr/201812/2018120317359906.jpg"></div>
+        </div>
+    </div>
+</body>
+</html>
